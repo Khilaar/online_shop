@@ -1,0 +1,36 @@
+header {
+    background-color: rgb(68, 67, 67);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 5px 5px 5px 5px rgb(33, 33, 33);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 2vw;
+}
+
+.headerNavigation {
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2vw;
+}
+
+.logout {
+    color: rgb(201, 204, 232);
+    cursor: pointer;
+}
+
+.logout:hover {
+    color: rgb(225, 16, 16);
+    cursor: pointer;
+}
+
+header a.active {
+    color: white;
+}
