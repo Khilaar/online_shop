@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import api from "../../App/api";
 import "./Login.css"
 import { loadUser, login } from "../../App/Store/Slices/userSlice";
@@ -13,6 +13,10 @@ const Login = () => {
     const navigate = useNavigate()
     const dispatch = useDispatch()
 
+    const loc = useLocation()
+
+    console.log(loc)
+
     const handleSubmit = async (e) => {
         e.preventDefault()
 
@@ -23,7 +27,10 @@ const Login = () => {
             dispatch(loadUser(res.data.user))
 
             setLoginError("")
-            navigate("/account")
+
+            const target = loc.state?.origin || "/account"
+
+            navigate(target)
 
         } catch (error) {
             if (error.response?.data?.detail) {

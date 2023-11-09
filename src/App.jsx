@@ -1,32 +1,40 @@
+import { useDispatch, useSelector } from 'react-redux';
 import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import api from './App/api';
+import Router from './Routes/Router';
+import { useEffect, } from 'react';
+import { login, logout } from './App/Store/Slices/userSlice';
 
-/*Routes import*/
-import Home from './Routes/HomeRoute/Home'
-import Login from './Routes/LoginRoute/Login';
-import Overview from './Routes/OverviewRoute/Overview';
-import ShoppingCart from './Routes/ShoppingCartRoute/ShoppingCart';
-import NotFound from './Routes/NotFoundRoute/NotFound';
-import Layout from './Routes/LayoutRoute/Layout';
-import Account from './Routes/AccountRoute/Account';
 
 
 function App() {
+  const dispatch = useDispatch()
+  const accessToken = useSelector(state => state.user.accessToken)
 
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<Layout />} >
-          <Route path="/" element={<Home/>} />
-          <Route path='/login' element={<Login/>} />
-          <Route path='/overview' element={<Overview/>} />
-          <Route path='/account' element={<Account/>} />
-          <Route path='/shoppingCart' element={<ShoppingCart/>} />
-          <Route path='*' element={<NotFound/>}/>
-          </Route>
-      </Routes>
-    </BrowserRouter>
-  )
+  useEffect(()=>{
+    const localToken =localStorage.getItem("accessToken")
+
+    if (localToken) {
+      api.post("/auth/token/verify/", {token:localToken})
+        .then(() => dispatch(login(localToken)))
+        .catch(() => {
+          localStorage.removeItem("accessToken")
+          dispatch(logout())
+        })
+    } else {
+      dispatch(logout())
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[])
+
+  if (accessToken === undefined) {
+    return <>Loading...</>
+  } else {
+    return <Router/>
+  }
+
+  
+  
 }
 
 export default App

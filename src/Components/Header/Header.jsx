@@ -20,11 +20,11 @@ const Header = () => {
             <h1>Shop</h1>
             <div className="headerNavigation">
             <NavLink to="/overview">Overview</NavLink>
-            <NavLink to="/shoppingCart">Shopping-Cart</NavLink>
                 {/* Depending if logged in, the user need to see different links */}
                 {isLoggedIn? (
                     <>
                         <NavLink to="/account">Account</NavLink>
+                        <NavLink to="/shoppingCart">Shopping-Cart</NavLink>
                         <a className="logout" onClick={handleLogout}>Logout</a>
                     </>
                 ) : (

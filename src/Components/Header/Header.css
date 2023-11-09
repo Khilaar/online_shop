@@ -15,10 +15,9 @@ header h1 {
 }
 
 .headerNavigation {
-    width: 40vw;
     display: flex;
-    justify-content: space-between;
     margin-right: 2vw;
+    gap: 20px;
 }
 
 .logout {
