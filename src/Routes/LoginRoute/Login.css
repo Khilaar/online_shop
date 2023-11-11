@@ -3,3 +3,17 @@
     border-radius: 10px;
     font-weight: 700;
 }
+
+#validation {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.loginCard h4 {
+    font-size: small;
+}
+
+.loginCard button {
+    font-size: small;
+}

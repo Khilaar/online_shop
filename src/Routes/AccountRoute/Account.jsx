@@ -33,9 +33,10 @@ const Account = () => {
     } else {
         return (
             <div>
-                <h2>{details.first_name} {details.last_name}</h2>
-                <h3>{details.username}</h3>
-                <h4>{details.email}</h4>
+                <h2>first name: {details.first_name}</h2>
+                <h2>last name: {details.last_name}</h2>
+                <h3>username: {details.username}</h3>
+                <h4>email: {details.email}</h4>
             </div>
         );
     }
