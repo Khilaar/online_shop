@@ -13,7 +13,6 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
 a {
   font-weight: 500;
   color: #646cff;
@@ -29,6 +28,40 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+body.light-mode {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: white;
+  color: #242424;
+}
+
+header {
+  background-color: rgb(68, 67, 67);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 5px 5px 5px 5px rgb(33, 33, 33);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header.light-mode {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 5px 5px 5px 5px rgb(33, 33, 33);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 h1 {
@@ -53,17 +86,4 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }

@@ -1,0 +1,76 @@
+.mainOverview {
+    display: flex;
+    justify-content: center;
+}
+
+.productsContainer {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 20px;
+    box-shadow: inset 0 0 10px black;
+    border-radius: 10px;
+}
+
+.wholeAllProducts {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    width: fit-content;
+}
+
+.productsContainer img {
+    width: 10vw;
+    border-radius: 10px;
+    align-self: center;
+    justify-self: center;
+    box-shadow: 5px 5px 5px  black;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.productTitle {
+    display: flex;
+    background-color: rgb(43, 43, 43);
+    justify-content: center;
+    font-size: large;
+    font-weight: 600;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px  black;
+}
+
+.productThumbnail {
+    background-color: rgb(69, 68, 68);
+    margin: 5px;
+    border-radius: 10px;
+    height: 50vh;
+    width: 25vw;
+    box-shadow: 5px 5px 5px  black;
+}
+
+.productThumbnail:hover {
+    background-color: gray;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height:60%;
+}
+
+.thumbnailButtons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.thumbnailButtons button{
+    box-shadow: 5px 5px 5px  black;
+}
