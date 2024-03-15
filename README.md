@@ -20,6 +20,7 @@ The motivation behind Online Shop stems from the desire to gain practical experi
 ReactJS, Redux Toolkit, Axios, JavaScript, CSS.
 
 **Getting Started**
+
 To explore Online Shop and kickstart your journey into frontend web development, follow these simple steps:
 
 1. Clone the repository: https://github.com/Khilaar/online_shop.git
