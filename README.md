@@ -32,7 +32,7 @@ To explore Online Shop and kickstart your journey into frontend web development,
 Online Shop was developed by me, with the invaluable support of online tutorials, documentation, and the vibrant developer community.
 
 LogIn or create a new account.
-![image](https://github.com/Khilaar/online_shop/assets/127531444/4ae8b239-cd76-4e4e-9ec9-750b7e4fd2d4)
+![image](https://github.com/Khilaar/online_shop/assets/127531444/72854e64-3684-4d83-9cbf-2eb636f44675)
 
 Create an account by entering your mail. You will receiva a mail with a verification code.
 Enter verification code and all the other credentials to create a new account.
