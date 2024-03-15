@@ -1,5 +1,5 @@
 
-Project Title: Online Shop
+Online Shop
 
 Introduction:
 Online Shop is a small-scale webshop project developed within a week with the primary goal of learning and practicing ReactJS, Redux Toolkit, and Axios. This project serves as a practical exercise to delve into frontend web development, focusing on state management and API integration. Completed within a short timeframe, Online Shop showcases my rapid learning potential when engaged in hands-on projects.
