@@ -1,13 +1,13 @@
 
-Online Shop
+# Online Shop
 
-Introduction:
+**Introduction**
 Online Shop is a small-scale webshop project developed within a week with the primary goal of learning and practicing ReactJS, Redux Toolkit, and Axios. This project serves as a practical exercise to delve into frontend web development, focusing on state management and API integration. Completed within a short timeframe, Online Shop showcases my rapid learning potential when engaged in hands-on projects.
 
-Motivation:
+**Motivation**
 The motivation behind Online Shop stems from the desire to gain practical experience in frontend web development and explore modern JavaScript frameworks and libraries within a constrained timeline. Recognizing the importance of hands-on projects in solidifying theoretical knowledge, Online Shop serves as a platform for experimenting with ReactJS concepts, Redux for state management, and Axios for making asynchronous HTTP requests.
 
-Key Features:
+**Key Features**
 
 1. React Components: Utilizing ReactJS for building reusable and modular UI components, Online Shop offers a structured approach to frontend development.
 2. Redux Toolkit Integration: Leveraging Redux Toolkit for state management, Online Shop ensures a centralized and predictable state container, enhancing scalability and maintainability.
@@ -16,10 +16,10 @@ Key Features:
 5. Dynamic Product Rendering: With the ability to fetch product data from a random free API, Online Shop dynamically renders product listings, providing a realistic shopping experience for users.
 6. Simplified User Experience: Keeping the user interface intuitive and user-friendly, Online Shop offers a straightforward shopping experience, focusing on essential functionalities without unnecessary complexities.
 
-Technologies Used:
+**Technologies Used**
 ReactJS, Redux Toolkit, Axios, JavaScript, CSS.
 
-Getting Started:
+**Getting Started**
 To explore Online Shop and kickstart your journey into frontend web development, follow these simple steps:
 
 1. Clone the repository: https://github.com/Khilaar/online_shop.git
